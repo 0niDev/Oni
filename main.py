@@ -1,7 +1,7 @@
 import requests
 import json
 
-api = "YOU_API"
+api = "YOUR_API"
 
 def getRequest(api):
     return json.decoder.JSONDecoder().decode(requests.get(api).text)['cnt']
